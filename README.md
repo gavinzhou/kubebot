@@ -116,6 +116,6 @@ kubebot
 
 Now, start asking the bot to run those [kubectl](http://kubernetes.io/docs/user-guide/kubectl/kubectl/) commands for you.
 
-![kubebot](kubebot.png "kubebot")
+![kubebot](images/kubebot.png "kubebot")
 
 

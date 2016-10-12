@@ -1,14 +1,10 @@
-FROM golang:1.6
+FROM alpine:3.4
+MAINTAINER gavin zhou <gavin.zhou@gmail.com>
 
-RUN wget http://storage.googleapis.com/kubernetes-release/release/v1.2.4/bin/linux/amd64/kubectl -O /usr/bin/kubectl && \
-    chmod +x /usr/bin/kubectl
+ADD https://storage.googleapis.com/kubernetes-release/release/v1.3.6/bin/linux/amd64/kubectl /usr/bin/kubectl
 
-RUN mkdir -p /go/src/app
-WORKDIR /go/src/app
+RUN apk add --no-cache ca-certificates \
+  && chmod +x /usr/bin/kubectl
+ADD kubebot /kubebot
 
-ADD . /go/src/app/
-
-RUN go-wrapper download
-RUN go-wrapper install
-
-CMD ["app"]
+ENTRYPOINT ["/kubebot"]
