@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 _tag=$1
 
 if [ -z "${_tag}" ]; then

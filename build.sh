@@ -1,8 +1,9 @@
 #!/bin/bash
+set -ex
 _tag=$1
 
 if [ -z "${_tag}" ]; then
-    source _VERSION   
+    source _VERSION
     _tag=${_VERSION}
 fi
 
