@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/orangesys/kubebot.svg?style=svg)](https://circleci.com/gh/orangesys/kubebot)
 [![](https://images.microbadger.com/badges/image/orangesys/alpine-kubebot.svg)](https://microbadger.com/images/orangesys/alpine-kubebot "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/orangesys/alpine-kubebot.svg)](https://microbadger.com/images/orangesys/alpine-kubebot "Get your own version badge on microbadger.com")
 # Kubebot
