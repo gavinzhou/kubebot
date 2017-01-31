@@ -23,8 +23,6 @@ dependencies:
     - rm -rf ${GOPATH}/src/${REPO_PATH}
     - mkdir -p ${GOPATH}/src/${ORG_PATH}
     - cp -r ~/orangeapi ${GOPATH}/src/${ORG_PATH}
-  pre:
-    - docker pull golang:1.7.1-alpine
 
 test:
   override:
