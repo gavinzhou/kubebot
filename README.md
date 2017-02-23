@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
       - name: kubebot
-        image: harbur/kubebot:0.1.0
+        image: orangesys/alpine-kubebot:0.1.2
         imagePullPolicy: Always
         env:
         # Create a secret with your slack bot token and reference it here
